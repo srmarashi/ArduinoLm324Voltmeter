@@ -1,3 +1,6 @@
+//Simple Arduino VoltMeter CODE BY: s.r.marashi  Schematic: google
+//srmarashi@yahoo.com
+
 #include <SPI.h>
 #include "U8glib.h"
 U8GLIB_PCD8544 u8g(2, 3, 5, 4,6);  // CLK ,DIN ,CE ,DC ,RST  
@@ -8,8 +11,7 @@ void setup() {
   pinMode(7, INPUT);
   digitalWrite(11,HIGH);
   Serial.begin(9600);
-
-      
+    
 }
 
 void loop() {  
